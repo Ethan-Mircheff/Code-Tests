@@ -5,7 +5,7 @@
 <h1>One Billion Digits of Pi:</h1>
 
 <?php
-$file = file("digits.txt");
+$file = file_get_contents("digits.txt");
 print "3.14$file";
 ?>
 
