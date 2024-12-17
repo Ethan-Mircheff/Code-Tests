@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>One Billion Digits of Pi:</h1>
+
+<?php
+$file = file_get_contents('./digits.txt', FILE_USE_INCLUDE_PATH);
+$arr = array('one','two','three','four',$file);
+echo implode("",$arr);
+?>
+
+</body>
+</html>
