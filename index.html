@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      #overlay{
+<style>#overlay{
     position: fixed; 
     width: 100%; 
     height: 100%; 
@@ -32,25 +30,21 @@
 
 #imgBig, #imgSmall{
     cursor: pointer;
-}
-    </style>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>Overlay Test</title>
-  </head>
-  <div id="overlay"></div>
-  <div id="overlayContent">
-    <img id="imgBig" src="" alt="" width="400" />
-  </div>
+}</style>
 
-  <div id="grid">
-   <img id="imgSmall" width="200" src="http://www.freeimageslive.com/galleries/space/earth/pics/a17_h_148_22718.gif" alt="" />
+<div id="overlay"></div>
+<div id="overlayContent">
+    <img id="imgBig" src="" alt="" width="400" />
+</div>
+
+<div id="grid">
+ <img id="imgSmall" width="200" src="http://www.freeimageslive.com/galleries/space/earth/pics/a17_h_148_22718.gif" alt="" />
     
-  <img id="imgSmall" width="200" src="http://static.ddmcdn.com/gif/moon-phases-08-131008.jpg" alt="" />
-    <img id="imgSmall" width="200" src="http://static.ddmcdn.com/gif/moon-phases-03-131008.jpg" alt="" />  
-    
-  </div>
-  
-  <script>
+<img id="imgSmall" width="200" src="http://static.ddmcdn.com/gif/moon-phases-08-131008.jpg" alt="" />
+  <img id="imgSmall" width="200" src="http://static.ddmcdn.com/gif/moon-phases-03-131008.jpg" alt="" />  
+</div>	
+
+<script>
 $("#grid img").click(function(){		                                        
 $("#imgBig").attr("src",$(this).prop('src'));
     $("#overlay").show();
