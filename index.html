@@ -52,21 +52,7 @@
     <img class="imgSmall" width="400" src="http://static.ddmcdn.com/gif/moon-phases-03-131008.jpg" alt="" />
 </div>	
 
-<script>
-    $(document).ready(function () {
-        $(".imgSmall").click(function () {
-            $("#imgBig").attr("src", $(this).prop('src'));
-            $("#overlay").show();
-            $("#overlayContent").show();
-        });
-
-        $("#imgBig, #overlay").click(function () {
-            $("#imgBig").attr("src", "");
-            $("#overlay").hide();
-            $("#overlayContent").hide();
-        });
-    });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
