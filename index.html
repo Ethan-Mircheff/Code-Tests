@@ -17,14 +17,16 @@
 
         #overlayContent {
             position: fixed;
-            width: 100%;
-            top: 100px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
             display: none;
-            overflow: hidden;
             z-index: 101;
-        }
-
+            width: auto;
+            max-width: 90vw;
+}
+        
         #imgBig, .imgSmall {
             cursor: pointer;
         }
