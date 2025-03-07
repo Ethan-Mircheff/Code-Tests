@@ -1,15 +1,16 @@
+/* Styles for the overlay */
 #overlay {
     position: fixed;
-    idth: 100%;
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #000;
-    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.7);
     display: none;
     z-index: 100;
 }
 
+/* Centered overlay content */
 #overlayContent {
     position: fixed;
     top: 50%;
@@ -22,13 +23,14 @@
     max-width: 90vw;
 }
 
+/* Responsive image scaling */
 #imgBig {
     width: auto;
     max-width: 90vw;
     max-height: 90vh;
     height: auto;
 }
-        
+
 #imgBig, .imgSmall {
     cursor: pointer;
 }
