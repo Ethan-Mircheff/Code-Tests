@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlay</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        <link rel="stylesheet" href="style.css">
-    </style>
+
+    <!-- Link to external JavaScript file (defer ensures it loads after the page) -->
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-<div id="overlay"></div>
-<div id="overlayContent">
-    <img id="imgBig" src="" alt="" width="800" />
-</div>
+    <div id="overlay"></div>
+    <div id="overlayContent">
+        <img id="imgBig" src="" alt="" />
+    </div>
 
-<div id="grid">
-    <img class="imgSmall" width="400" src="http://www.freeimageslive.com/galleries/space/earth/pics/a17_h_148_22718.gif" alt="" />
-    <img class="imgSmall" width="400" src="http://static.ddmcdn.com/gif/moon-phases-08-131008.jpg" alt="" />
-    <img class="imgSmall" width="400" src="http://static.ddmcdn.com/gif/moon-phases-03-131008.jpg" alt="" />
-</div>	
+    <div id="grid">
+        <img class="imgSmall" src="http://www.freeimageslive.com/galleries/space/earth/pics/a17_h_148_22718.gif" alt="" />
+        <img class="imgSmall" src="http://static.ddmcdn.com/gif/moon-phases-08-131008.jpg" alt="" />
+        <img class="imgSmall" src="http://static.ddmcdn.com/gif/moon-phases-03-131008.jpg" alt="" />
+    </div>
+
 </body>
-    <script src="script.js"></script>
 </html>
