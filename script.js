@@ -1,13 +1,13 @@
 $(document).ready(function () {
     $(".imgSmall").click(function () {
         $("#imgBig").attr("src", $(this).prop('src'));
-        $("#clickOverlay").fadeIn(150);
-        $("#clickOverlayContent").fadeIn(150);
+        $("#clickOverlay").fadeIn(100);
+        $("#clickOverlayContent").fadeIn(100);
     });
 
     $("#imgBig, #clickOverlay").click(function () {
         $("#imgBig").attr("src", "");
-        $("#clickOverlay").fadeOut(150);
-        $("#clickOverlayContent").fadeOut(150);
+        $("#clickOverlay").fadeOut(100);
+        $("#clickOverlayContent").fadeOut(100);
     });
 });
